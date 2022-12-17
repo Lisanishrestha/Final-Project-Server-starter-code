@@ -16,8 +16,8 @@ const seedDB = async () => {
 	});
 	// Create a new campus
 	const dummy_campus2 = await Campus.create({
-		name: "Queens College",
-		imageUrl: "https://coursedog-images-public.s3.us-east-2.amazonaws.com/undefined/QNS01%20Clock-tower-image%20for%20catalog%20landing%20page.jpg",
+		name: "Queens College", 
+		imageUrl: "https://theticker.org/wp-content/uploads/2022/05/Queens-College-_-Queens-College-press-release.webp",
 		address: "65-30 Kissena Blvd, Queens, NY 11367",
 		description: "This is a school in Queens, New York."
 	});
@@ -32,12 +32,18 @@ const seedDB = async () => {
 	// Create a new student for a campus
 	const dummy_student = await Student.create({
 		firstname: "Joe",
-      lastname: "Smith",
+        lastname: "Smith",
+		email: "Joesmith@abc.com",
+		imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRePoVhTeaks5ESIWqL34k8BOO9Wh6UZdZECw&usqp=CAU",
+	  	gpa: 0.0
 	});
 	// Create a new student for a campus
 	const dummy_student2 = await Student.create({
 		firstname: "Mary",
-      lastname: "Johnson",
+        lastname: "Johnson",
+		email: "Maryjohnson@abc.com",
+	  	imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRePoVhTeaks5ESIWqL34k8BOO9Wh6UZdZECw&usqp=CAU",
+	 	gpa: 0.0
 	});
 
 	// Add students to campuses
