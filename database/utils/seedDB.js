@@ -32,7 +32,7 @@ const seedDB = async () => {
 	// Create a new student for a campus
 	const dummy_student = await Student.create({
 		firstname: "Joe",
-        lastname: "Smith",
+        	lastname: "Smith",
 		email: "Joesmith@abc.com",
 		imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRePoVhTeaks5ESIWqL34k8BOO9Wh6UZdZECw&usqp=CAU",
 	  	gpa: 0.0
@@ -40,7 +40,7 @@ const seedDB = async () => {
 	// Create a new student for a campus
 	const dummy_student2 = await Student.create({
 		firstname: "Mary",
-        lastname: "Johnson",
+        	lastname: "Johnson",
 		email: "Maryjohnson@abc.com",
 	  	imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRePoVhTeaks5ESIWqL34k8BOO9Wh6UZdZECw&usqp=CAU",
 	 	gpa: 0.0
